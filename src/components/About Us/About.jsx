@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../../assets/video.mp4";
+// import video from "../../assets/video.mp4";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -80,7 +80,7 @@ const About = () => {
             viewport={{ once: true }}
             className="relative rounded-2xl overflow-hidden shadow-lg"
           >
-            <video
+            <video src='https://drive.google.com/file/d/1E8D54LmKdLL2bNJhOJ9X6jxH-rKKABXB/view?usp=sharing' controls 
               className="w-full h-full object-cover rounded-2xl"
               autoPlay
               muted
