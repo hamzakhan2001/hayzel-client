@@ -80,14 +80,14 @@ const About = () => {
             viewport={{ once: true }}
             className="relative rounded-2xl overflow-hidden shadow-lg"
           >
-            <video src='https://drive.google.com/file/d/1E8D54LmKdLL2bNJhOJ9X6jxH-rKKABXB/view?usp=sharing' controls 
+            <video  
               className="w-full h-full object-cover rounded-2xl"
               autoPlay
               muted
               loop
               playsInline
             >
-              <source src={video} type="video/mp4" />
+              <source src='https://drive.google.com/file/d/1E8D54LmKdLL2bNJhOJ9X6jxH-rKKABXB/view?usp=sharing' controls type="video/mp4" />
             </video>
           </motion.div>
         </div>
