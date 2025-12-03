@@ -1,0 +1,56 @@
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Wrapper with animated gradient border */
+.card-wrapper {
+  border-radius: 0.75rem;
+  background: linear-gradient(270deg, #00b4d8, #0077b6, #00b4d8);
+  background-size: 200% 200%;
+  padding: 2px; /* Border thickness */
+  animation: borderMove 4s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 1500px;
+}
+
+/* Shared Face Styling */
+.card-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: rgba(2, 6, 23, 0.75); /* Glass dark background */
+  box-shadow: 0 10px 25px rgba(2, 6, 23, 0.5);
+  color: #ffffff;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Front face – ensure text stands out */
+.card-face h4 {
+  font-size: 1.25rem;
+  color: #4cc0d9; /* Vibrant blue for titles */
+}
+
+/* Back face */
+.card-back {
+  transform: rotateY(180deg);
+  text-align: center;
+  line-height: 1.9;
+  color: #f1f5f9; /* Lighter text for readability */
+}
+
+/* Hover effect on wrapper for extra depth */
+.card-wrapper:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
