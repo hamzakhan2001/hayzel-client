@@ -1,7 +1,7 @@
 // src/service/adminApi.js
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000 " || import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = "https://endearing-cucurucho-aa39c4.netlify.app/";
 
 // Create axios instance
 const api = axios.create({
