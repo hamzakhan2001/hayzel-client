@@ -1,7 +1,7 @@
 // src/service/adminApi.js
 import axios from "axios";
 
-const API_BASE_URL = "https://endearing-cucurucho-aa39c4.netlify.app/";
+const API_BASE_URL = "hayzel-server-production.up.railway.app";
 
 // Create axios instance
 const api = axios.create({
